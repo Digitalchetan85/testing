@@ -1,0 +1,52 @@
+/* The following block can be included in a custom.scss */
+/* make the customizations */
+$theme-colors: (
+  "primary": #0367BF,
+  "secondary": #6c757d,
+  "dark": #343a40,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #FCFEE8,
+  "color1": #6C9D5F,
+  "color2": #67B5DC,
+  "color3": #9B2828,
+  "color4":#1CB1C9,
+  "color5": #9BCA3D,
+  "color6":#A6A9AB,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #09659E;
+$secondary-color: #4BB843;
+$white-color: white;
+$black-color: #000;
+$tertiary-color: #9D9E9E;
+$dark-color: #001524;
+
+p {
+  text-align: justify !important;
+}
+
+#SRLLightbox {
+  .SRLDownloadButton {
+    display: none !important;
+  }
+}
+
+
+#navbar {
+  .nav-link {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    color: $primary-color;
+    text-transform: uppercase;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
