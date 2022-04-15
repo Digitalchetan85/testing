@@ -67,7 +67,7 @@ const Home = () => {
           </div>
           <div className="d-none d-md-block position-absolute top-50 start-0 translate-middle-y bg-light p-2 ms-5 border border-5 border-primary">
             <div className="p-3">
-                <h2 className="text-primary">Tsetazang Boutique Hotel</h2>
+                <h2 className="text-primary">Tselazang Boutique Hotel</h2>
                 <p>Arithang, Near SP Turning</p>
                 <p>Gangtok - 737101</p>
                 <p>Phone - 70033 95709/89727 29358</p>
@@ -75,7 +75,7 @@ const Home = () => {
           </div> 
           <div className="position-absolute top-50 start-0 translate-middle-y ms-3 d-block d-md-none bg-light p-2 border border-5 border-primary">
             <div className="p-3">
-                <h2 className="text-primary">Tsetazang Boutique Hotel</h2>
+                <h2 className="text-primary">Tselazang Boutique Hotel</h2>
                 <p>Arithang, Near SP Turning</p>
                 <p>Gangtok - 737101</p>
                 <p>Phone - 70033 95709/89727 29358</p>

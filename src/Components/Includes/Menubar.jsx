@@ -35,7 +35,7 @@ const Menubar = () => {
           <Nav>
             <Nav.Link
               className="btn-sm btn-primary text-white rounded-circle p-5 text-center"
-              href="tel:07003395709"
+              as={Link} to="/enquiry"
             > Book Now
             </Nav.Link>
           </Nav>

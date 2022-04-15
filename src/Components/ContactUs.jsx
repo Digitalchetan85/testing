@@ -1,6 +1,6 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import * as Yup from "yup";
 
 const Contact = () => {
@@ -12,8 +12,7 @@ const Contact = () => {
     phone: "",
   };
 
-  const phoneRegExp =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Required"),
@@ -40,10 +39,9 @@ const Contact = () => {
                 <i className="fas fa-map-marker-alt fs-3 p-3 text-primary bg-white border border-primary rounded-circle"></i>
 
                 <address className="mt-3">
-                  <p className="text-center text-primary fw-bold">
-                    Rashmi Prasad Alley Marg, Arithang, Gangtok, Sikkim - 737
-                    101
-                  </p>
+                  <h2 className="text-primary">Tselazang Boutique Hotel</h2>
+                  <p className="text-primary text-center fw-bold mb-0">Arithang, Near SP Turning</p>
+                  <p className="text-primary text-center fw-bold mb-0">Gangtok - 737101</p>
                 </address>
               </div>
             </Col>
@@ -78,7 +76,7 @@ const Contact = () => {
                   <div className="text-center">
                     <a
                       className="text-decoration-none text-primary fw-bold fs-5"
-                      href="mailto:business@shanthasdesigns.com"
+                      href="mailto:info@Tselazang.com"
                     >
                       info@Tselazang.com
                     </a>
@@ -92,11 +90,55 @@ const Contact = () => {
       <div className="py-3 py-md-5 bg-light">
         <Container>
           <Row className="justify-content-center">
+            <h2 className="text-primary text-center py-3">
+              Any Queries? <br></br> Please write a Mail to Us.
+            </h2>
             <Col md={6} className="align-self-center">
               <div className="text-center">
-                <h2 className="text-primary py-3">
-                  Any Queries? <br></br> Please write a Mail to Us.
-                </h2>
+                <h4 className="text-center">Tariff</h4>
+                <Table bordered hover>
+                  <thead>
+                    <tr>
+                      <th>Sl.no</th>
+                      <th>Rooms</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td> 3 Bedded Rooms Facing the Valley</td>
+                      <td>Rs 2500/- each</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>3 Bedded Rooms Not Facing the Valley</td>
+                      <td>Rs 2000/- each</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>4 Bedded Rooms Facing the Valley</td>
+                      <td>Rs 3500/- each</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>
+                        Off seaseon discount from 16th June to 30th September
+                      </td>
+                      <td>30% Off</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Season Discount from October to December</td>
+                      <td>20% Off</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Season Discount from January to March</td>
+                      <td>40% Off</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
             </Col>
             <Col md={6}>
