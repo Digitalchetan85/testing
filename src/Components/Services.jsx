@@ -21,23 +21,17 @@ const Services = () => {
                   hours hot and cold-water supply, Television and WIFI
                   facilities.
                 </li>
-                <li>
-                  Our Restaurant offer both Vegetarian and Non vegetarian Food.
-                  Break fast is on the house and we provide Paratha, Puri ,
-                  Bread Butter , sandwiches etc. etc. .Our Breakfast also
-                  include south delicacies like Upma and Poha.. We have separate
-                  arrangements for making vegetarian and non-vegetarian food.
-                </li>
+                <li>Our Restaurant offer both Vegetarian and Non-vegetarian Food. Breakfast is on the house and we provide Paratha, Puri, Bread Butter, sandwiches etc. Our Breakfast also include south delicious like Upma and Poha. We have separate arrangements for making vegetarian and non-vegetarian food.</li>
                 <li>
                   We can arrange and organize your transport schedule all over
-                  Sikkim and neighboring areas like Darjeeling, Nepal, and
-                  Bhutan
+                  Sikkim and neighbouring areas like Darjeeling, Nepal, and
+                  Bhutan.
                 </li>
                 <li>
-                  We Provide Pick up drop facilities from Airports, namely,
+                  We Provide Pick up drop facilities from Airports namely,
                   Bagdogra ( west Bengal ) and Pakyong ( Gangtok ) /We also
                   provide Pick up and drop facilities from nearest Railway
-                  station NJP/ Siliguri .
+                  station NJP/ Siliguri.
                 </li>
               </ul>
             </Col>

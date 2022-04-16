@@ -20,19 +20,20 @@ const Home = () => {
                 Welcome to Tselazang Boutique Hotel
               </h2>
               <p>
-                Tselazang Bourique budget hotel is in the heart of Gangtok
+                Tselazang Boutique budget hotel is in the heart of Gangtok
                 offering amenities suitable for common man. It's situated in a
                 convenient location close to all local amenities. The place is
-                attractive and most of our rooms overlook the mountain view wher
+                attractive and most of our rooms overlook the mountain view where
                 you can enjoy the Pristine scenery. Most times of the year you
                 can view the very high mountains of Himalayas, its complex
                 geologic structure, large valleys, deep river gorges and rich
                 vegetarian.
               </p>
               <p>
-                We are in Arihang and a home to Pedestrainized MG Market,
-                Restuarants serve locakl tea, traditional thupka noodles and Mom
+              We are in Arithang and a home to Pedestrianized MG Market.
+                Restaurants serve local tea, traditional thupka noodles and Momo
                 dumplings, while chic cafes offer coffees and pastries.
+
               </p>
             </Col>
           </Row>
@@ -45,7 +46,7 @@ const Home = () => {
               <div className="text-center">
                 <p className="p-3">
                 We offer Boarding and lodging services affordable to common
-                  man. We have 8 triple beds and one four bedded Bedrooms fitted
+                  man. We have 8 triple Bedded Rooms and one 4 bedded Bedrooms fitted
                   with modern amenities. The Rooms are spacious and have 24
                   hours hot and cold-water supply, Television and WIFI
                   facilities.
