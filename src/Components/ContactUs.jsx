@@ -1,3 +1,4 @@
+import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useState } from "react";
 import { Button, Col, Container, Row, Table } from "react-bootstrap";
@@ -10,9 +11,11 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
+    msg: "",
   };
 
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Required"),
@@ -22,15 +25,36 @@ const Contact = () => {
       .matches(phoneRegExp, "Phone No is not valid")
       .min(10, "Phone No Minimum 10 Digits")
       .max(10, "Phone No Minimum 10 Digits"),
+      msg: Yup.string().required("Required"),
   });
 
-  const onSubmit = (values) => {};
+  const onSubmit = (values) => {
+    console.log(values);
+    axios
+      .get(
+        "https://tselazang.com/Email/email.php?sendto=" +
+          values.email +
+          "&name=" +
+          values.name +
+          "&phone=" +
+          values.phone +
+          "&msg=" +
+          values.msg
+      )
+      .then(function (response) {
+        console.log(response);
+        setformStatus(response.data)
+      })
+      .error(function (err) {
+        console.log(err);
+      });
+  };
   return (
     <>
       <div className="py-3 py-md-5 bg-primary">
         <h1 className="text-white text-center">Contact</h1>
       </div>
-      .
+      
       <section id="contact-1" className="pt-3 pb-3 pt-md-5 pb-md-5">
         <Container>
           <Row>
@@ -40,8 +64,12 @@ const Contact = () => {
 
                 <address className="mt-3">
                   <h2 className="text-primary">Tselazang Boutique Hotel</h2>
-                  <p className="text-primary text-center fw-bold mb-0">Arithang, Near SP Turning</p>
-                  <p className="text-primary text-center fw-bold mb-0">Gangtok - 737101</p>
+                  <p className="text-primary text-center fw-bold mb-0">
+                    Arithang, Near SP Turning
+                  </p>
+                  <p className="text-primary text-center fw-bold mb-0">
+                    Gangtok - 737101
+                  </p>
                 </address>
               </div>
             </Col>
@@ -76,9 +104,9 @@ const Contact = () => {
                   <div className="text-center">
                     <a
                       className="text-decoration-none text-primary fw-bold fs-5"
-                      href="mailto:info@Tselazang.com"
+                      href="mailto:tselazangboutiquehotel22@gmail.com"
                     >
-                      info@Tselazang.com
+                      tselazangboutiquehotel22@gmail.com
                     </a>
                   </div>
                 </address>
@@ -99,7 +127,7 @@ const Contact = () => {
                 <Table bordered hover>
                   <thead>
                     <tr>
-                      <th>Sl.no</th>
+                      <th>Sl. No.</th>
                       <th>Rooms</th>
                       <th>Price</th>
                     </tr>
@@ -108,34 +136,22 @@ const Contact = () => {
                     <tr>
                       <td>1</td>
                       <td> 3 Bedded Rooms Facing the Valley</td>
-                      <td>Rs 2500/- each</td>
+                      <td>Rs 3500/- each</td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>3 Bedded Rooms Not Facing the Valley</td>
-                      <td>Rs 2000/- each</td>
+                      <td>Rs 2500/- each</td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>4 Bedded Rooms Facing the Valley</td>
-                      <td>Rs 3500/- each</td>
+                      <td>Rs 4500/- each</td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td>
-                        Off seaseon discount from 16th June to 30th September
-                      </td>
-                      <td>30% Off</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Season Discount from October to December</td>
-                      <td>20% Off</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Season Discount from January to March</td>
-                      <td>40% Off</td>
+                      <td>Off Season Discount from July to February</td>
+                      <td>50% Off</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -205,12 +221,12 @@ const Contact = () => {
                             rows="6"
                             type="text"
                             className="form-control"
-                            id="message"
-                            name="message"
+                            id="msg"
+                            name="msg"
                             placeholder="Message"
                           />
                           <small className="text-danger">
-                            <ErrorMessage name="message" />
+                            <ErrorMessage name="msg" />
                           </small>
                         </div>
                       </Col>

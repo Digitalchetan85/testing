@@ -2,15 +2,16 @@ import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
-import Image1 from "../images/gallery/image-2.png";
-import Image2 from "../images/gallery/image-3.png";
-import Image3 from "../images/gallery/image-4.png";
-import Image4 from "../images/gallery/image-5.png";
-import Image5 from "../images/gallery/image-6.png";
-import Image6 from "../images/gallery/image-7.png";
-import Image7 from "../images/gallery/image-8.png";
-import Image8 from "../images/gallery/image-9.png";
-import Image9 from "../images/gallery/image-10.png";
+import Image1 from "../images/gallery/image-1.png";
+import Image2 from "../images/gallery/image-2.png";
+import Image3 from "../images/gallery/image-3.png";
+import Image4 from "../images/gallery/image-4.png";
+import Image5 from "../images/gallery/image-5.png";
+import Image6 from "../images/gallery/image-6.png";
+import Image7 from "../images/gallery/image-7.png";
+import Image8 from "../images/gallery/image-8.png";
+import Image9 from "../images/gallery/image-9.png";
+import Image10 from "../images/gallery/image-10.png";
 
 const Gallery = () => {
   const images = [
@@ -23,6 +24,7 @@ const Gallery = () => {
     { id: 7, imgName: Image7, alt: "", tag: "" },
     { id: 8, imgName: Image8, alt: "", tag: "" },
     { id: 9, imgName: Image9, alt: "", tag: "" },
+    { id: 10, imgName: Image10, alt: "", tag: "" },
   ];
 
   

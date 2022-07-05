@@ -17,7 +17,7 @@ function App() {
       <Router>        
       <Menubar />
         <Routes>
-          <Route path="/tselazang" index element={<Home />}></Route>
+          <Route path="/" index element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>          

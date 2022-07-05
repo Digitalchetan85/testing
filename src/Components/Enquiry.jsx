@@ -1,3 +1,4 @@
+import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -10,6 +11,10 @@ const Enquiry = () => {
     name: "",
     email: "",
     phone: "",
+    persons: "",
+    days: "",
+    address: "",
+    message: "",
   };
 
   const phoneRegExp =
@@ -23,9 +28,39 @@ const Enquiry = () => {
       .matches(phoneRegExp, "Phone No is not valid")
       .min(10, "Phone No Minimum 10 Digits")
       .max(10, "Phone No Minimum 10 Digits"),
+    message: Yup.string().required("required"),
+    persons: Yup.string().required("required"),
+    days: Yup.string().required("required"),
+    address: Yup.string().required("required"),
   });
 
-  const onSubmit = (values) => {};
+  const onSubmit = (values) => {
+    console.log(values);
+    axios
+      .get(
+        "https://tselazang.com/Email/enquiry.php?sendto=" +
+          values.email +
+          "&name=" +
+          values.name +
+          "&phone=" +
+          values.phone +
+          "&persons=" +
+          values.persons+
+          "&days=" +
+          values.days +
+          "&address=" +
+          values.address +
+          "&message=" +
+          values.message
+      )
+      .then(function (response) {
+        // console.log(response);
+        setformStatus(response.data)
+      })
+      .error(function (err) {
+        console.log(err);
+      });
+  };
   return (
     <>
       <div className="py-3 py-md-5 bg-primary">

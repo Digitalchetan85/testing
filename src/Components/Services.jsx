@@ -16,12 +16,18 @@ const Services = () => {
               <ul>
                 <li>
                   We offer Boarding and lodging services affordable to common
-                  man. We have 8 triple beds and one four bedded Bedrooms fitted
-                  with modern amenities. The Rooms are spacious and have 24
-                  hours hot and cold-water supply, Television and WIFI
+                  man. We have 8 triple Bedded Rooms and one 4 bedded Bedrooms
+                  fitted with modern amenities. The Rooms are spacious and have
+                  24 hours hot and cold-water supply, Television and WIFI
                   facilities.
                 </li>
-                <li>Our Restaurant offer both Vegetarian and Non-vegetarian Food. Breakfast is on the house and we provide Paratha, Puri, Bread Butter, sandwiches etc. Our Breakfast also include south delicious like Upma and Poha. We have separate arrangements for making vegetarian and non-vegetarian food.</li>
+                <li>
+                  Our Restaurant offer both Vegetarian and Non-vegetarian Food.
+                  Breakfast is on the house and we provide Paratha, Puri, Bread
+                  Butter, sandwiches etc. Our Breakfast also include south
+                  delicious like Upma and Poha. We have separate arrangements
+                  for making vegetarian and non-vegetarian food.
+                </li>
                 <li>
                   We can arrange and organize your transport schedule all over
                   Sikkim and neighbouring areas like Darjeeling, Nepal, and

@@ -14,7 +14,7 @@ const Menubar = () => {
       className="shadow-sm sticky-top bg-white"
     >
       <Container>
-        <Navbar.Brand as={Link} to="/tselazang">
+        <Navbar.Brand as={Link} to="/">
           <Image src={Logo} className="img-fluid" alt="" />
         </Navbar.Brand>
         {/* <Nav.Link
@@ -25,7 +25,7 @@ const Menubar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto me-auto"> 
-            <Nav.Link as={Link} to="/tselazang" className="border-end border-primary">Home</Nav.Link>
+            <Nav.Link as={Link} to="/" className="border-end border-primary">Home</Nav.Link>
             <Nav.Link as={Link} to="/about-us" className="border-end border-primary">About Us</Nav.Link>
             <Nav.Link as={Link} to="/services" className="border-end border-primary">Services</Nav.Link>
             <Nav.Link as={Link} to="/gallery" className="border-end border-primary">Gallery</Nav.Link>
