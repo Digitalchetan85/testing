@@ -1,10 +1,13 @@
 import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import * as Yup from "yup";
 
 const Enquiry = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const [formStatus, setformStatus] = useState("");
 
   const initialValues = {

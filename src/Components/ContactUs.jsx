@@ -1,10 +1,13 @@
 import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import * as Yup from "yup";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const [formStatus, setformStatus] = useState("");
 
   const initialValues = {
@@ -91,6 +94,20 @@ const Contact = () => {
                       href="tel:08972728358"
                     >
                       +91 89727 29358
+                    </a>
+                    <br></br>
+                    <a
+                      className="text-decoration-none text-primary fw-bold fs-5"
+                      href="tel:09635792999"
+                    >
+                      +91 96357 92999
+                    </a>
+                    <br></br>
+                    <a
+                      className="text-decoration-none text-primary fw-bold fs-5"
+                      href="tel:09062321664"
+                    >
+                      +91 90623 21664
                     </a>
                   </p>
                 </address>

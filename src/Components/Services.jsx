@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
 import Image2 from "../images/image2.jpg";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className="py-3 py-md-5 bg-primary">

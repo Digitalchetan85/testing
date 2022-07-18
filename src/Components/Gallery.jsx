@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
@@ -14,6 +14,9 @@ import Image9 from "../images/gallery/image-9.png";
 import Image10 from "../images/gallery/image-10.png";
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const images = [
     { id: 1, imgName: Image1, alt: "", tag: "" },
     { id: 2, imgName: Image2, alt: "", tag: "" },
